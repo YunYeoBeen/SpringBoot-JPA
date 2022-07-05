@@ -10,8 +10,14 @@
         </processorPath>
         <module name="jpashop.jpashop.main~1" />
       </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="JPA" target="17" />
       <module name="jpashop.jpashop.main" target="11" />
       <module name="jpashop.jpashop.test" target="11" />
     </bytecodeTargetLevel>
